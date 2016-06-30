@@ -1,0 +1,98 @@
+1.		1.	git branch architecture
+		2.	git branch --list  
+		3.	git checkout architecture
+		4.	mkdir assets uploads
+		5.	echo >> uploads/.keep
+		6.	echo fgdfgdfg >> uploads/text1.txt
+		7.	git add .
+		8.	git commit -m "create file sturucture and add some file"
+		9.	echo >> assets/css.js
+		10.	echo >> assets/all.js
+		11.	git add .
+		12.	git commit -m "add two file all.js and css.js"
+		13.	git push origin architecture
+		14.	echo >>.gitignore
+		15.	echo uploads/* >> .gitignore
+		16.	echo !.keep >> .gitignore
+		17.	echo !.gitignore >> .gitignore
+		18.	git rm --cached -r D:\cursor education\git\VCS-Advanced\uploads
+		19.	git add .
+		20. git commit -m "create gitignore"
+		21.	git checkout master
+		22.	git merge architecture
+		23.	git push origin master
+		24.	git branch --delete architecture
+		25.	git push origin :architecture 
+2.
+		1.	git branch test
+		2.	echo yura >> myname
+		3.  git add .
+		4.  git commit -m"add file myname"
+		5.	echo surname >> romaniv
+		6.  git add .
+		7.	git commit -m"add file surname"
+		8.	git checkout test
+		9.	git rebase master
+		10.	echo bmw >> car
+		11.	git add .
+		12.	git commit -m"add file car"
+		13.	git checkout master
+		14.	git merge test
+		15.	git branch --delete test
+		16.	git push origin :test
+		17. git push origin master
+3.
+		1.  echo task3 >> hello
+		2.	git add .
+		3.	git commit -m"add file task3"
+		4.	echo task3new >> world
+		5.	git add .
+		6.	git commit -m"add file task3new"
+		7.	git tag v1
+		8.	git push origin v1
+4.
+		1. git submodule add https://github.com/stefaniukoleg/branchrepo
+		2.	git add .
+		3.	git commit -m"added submodule"
+		4.	git push origin master
+5.
+		1.	git branch gh-pages
+		2.	git checkout gh-pages
+		3.	echo yuraromaniv >> index.html
+		4.	git add .
+		5.	git commit -m"add html file"
+		6.	git push origin pages
+		7.	echo UKRAINE,LVIV,2016 >> index.html
+		8.	git add .
+		9.	git commit -m"MAKE CHANGES"
+		10. git push origin gh-pages
+6.
+		1.	echo yuraromaniv1995 >> file.txt
+		2.	git add .
+		3.	git commit -m"create file.txt"
+		4..	git branch branch 
+		5..	git checkout branch
+		6..	echo romaniv777 >> file.txt
+		7.	git add .
+		8.	git commit -m"edit file.txt"
+		9.	git merge master
+		10. git merge --abort
+		11.	вручну відкрив файл і вирішив конфлікт
+		12.	git add .
+		13. git commit -m"edit file.txt manualy"
+		14.	mergy успішний
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
